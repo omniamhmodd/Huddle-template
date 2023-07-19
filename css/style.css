@@ -70,11 +70,11 @@ ul{
 @media(max-width:767px){
     .header .container{
         display: flex;
-    justify-content: space-between;
-  align-items: center;
+    justify-content:flex-start;
+  align-items:center;
     }
     .header .container li{
-        display: none;
+        /* display: none; */
     }
  } 
 .header .container .logo img{
@@ -157,6 +157,7 @@ ul{
 width: 250px;
 height: 50px;
 border-radius: 60px;
+box-shadow: 5px 12px 20px 5px rgba(89, 2, 82, 0.13) , 0 2px 4px 0 rgba(214, 52, 200, 0.12);
 }
 .landing .container .link a{
     color: white;
@@ -173,6 +174,7 @@ font-weight: bold;
     padding-top:var(--main-padding-top) ;
     padding-bottom: 300px;
     position: relative;
+   
     
 }
 .overall .container{
@@ -192,19 +194,24 @@ border-radius: 10px;
 z-index: 1;
 }
 @media(max-width:767px){
-    .overall .box{
+    .overall{
+        width:calc(100% - 40px);
+    }
+    .overall .container{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 355px;
-       left: 15px;
+    }
+    .overall .box{   
+     flex-direction: column;
+        width: 260px;
+        margin: auto 50px ;
     }
     .overall .box .text{
-        margin:  0 ;
+        margin:  15px ;
         width: fit-content;
         text-align: center;
-        
     }
     .overall .box .image{
         display: flex;
@@ -363,6 +370,7 @@ top: -135px;
  }
  .footer .overlay .link{
     background-color: rgb(221, 99, 211);
+box-shadow: 5px 12px 20px 5px rgba(89, 2, 82, 0.13) , 0 2px 4px 0 rgba(214, 52, 200, 0.12);
 width: 250px;
 height: 50px;
 border-radius: 60px;
